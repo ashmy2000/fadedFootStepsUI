@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Ghost, Menu, X, User } from 'lucide-react';
+import { Menu, X, User } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuthStore } from '../../stores/authStore';
-
+import companylogowhite from '../../public/assets/companylogowhite.png'
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -38,11 +38,12 @@ export const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link
-            to="/"
-            className="flex items-center space-x-2 group"
-          >
-            <Ghost className="w-8 h-8 text-ecto-green group-hover:animate-pulse" />
+          <Link to="/" className="flex items-center space-x-2 group">
+            <img
+              src={companylogowhite}            // or "/logo.svg" if you put it in /public
+              alt="Faded Footsteps"
+              className="w-8 h-8 block group-hover:opacity-80 transition-opacity"
+            />
             <span className="text-2xl font-heading font-bold text-white group-hover:text-ecto-green transition-colors">
               Faded Footsteps
             </span>

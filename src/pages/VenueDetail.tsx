@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, MapPin, Users, Film, Headset as VrHeadset, Calendar, Clock, AlertTriangle, Star } from 'lucide-react';
+import { ArrowLeft, MapPin, Users, Film, Headset as VrHeadset, Calendar, AlertTriangle} from 'lucide-react';
 import { Button } from '../components/UI/Button';
 import { Card } from '../components/UI/Card';
 import { cities, timeSlots } from '../data/mockData';

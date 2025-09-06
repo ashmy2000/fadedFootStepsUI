@@ -1,5 +1,5 @@
 import React from 'react';
-import { Ghost, Mail, MapPin, Phone } from 'lucide-react';
+import { Ghost, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
@@ -22,7 +22,8 @@ export const Footer: React.FC = () => {
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2 text-fog-gray">
                 <Mail className="w-4 h-4" />
-                <span>hello@fadedsteps.com</span>
+                <span>fadedfoosteps.technical@hotmail.com</span>
+                <span>077136041212</span>
               </div>
             </div>
           </div>

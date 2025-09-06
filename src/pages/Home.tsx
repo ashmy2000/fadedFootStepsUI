@@ -331,7 +331,7 @@ export const Home: React.FC = () => {
             Join thousands of thrill-seekers who have experienced horror like never before. 
             Your next unforgettable adventure is just a click away.
           </p>
-          <Button size="lg" className="animate-glow">
+          <Button size="lg" className="block mx-auto w-fit animate-glow">
             <Link to="/locations">Book Your Experience</Link>
           </Button>
         </Card>
